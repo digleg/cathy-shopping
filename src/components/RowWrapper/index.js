@@ -7,15 +7,9 @@ import { selectGetCompleteOrder, selectGetProcessingOrder } from './RowWrapperSl
 import './styles.css';
 
 function RowWrapper({ status }) {
-  console.log('status:', status);
-
   const processingOrder = useSelector(selectGetProcessingOrder);
   const completeOrder = useSelector(selectGetCompleteOrder);
   const showOrder = status ? processingOrder : completeOrder;
-
-  console.log('processingOrder:', processingOrder);
-  console.log('completeOrder:', completeOrder);
-  console.log('showOrder:', showOrder);
   return (
     <div className="row-wrapper">
       <div className="row-wrapper__title-wrapper">

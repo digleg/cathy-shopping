@@ -2,6 +2,7 @@
   min-height: 192px;
   display: flex;
   align-items: center;
+  padding: 3px;
 }
 
 .row__border:not(:last-child) {
