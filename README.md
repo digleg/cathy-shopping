@@ -16,6 +16,7 @@ https://cathy-shopping.web.app/
 6. component reused.
 7. draw.io draw the wireframe of RWD (web/mobile devices).
 8. Add Circular Progress while loading the data from db.
+9. Get Data from Firebase Server (similar to API call actions).
 
 ## Available Scripts
 
