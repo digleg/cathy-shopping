@@ -35,14 +35,6 @@ You will also see any lint errors in the console.
 
 To build the function
 
-### `firebase deploy`
-
-You can deploy to firebase server
-
-## git repository
-
-https://github.com/digleg/cathy-shopping
-
 ## framework made by draw.io
 <p align="center">
 <img src="https://i.imgur.com/cjswFvU.png" alt="draw.io" width="400"/>
