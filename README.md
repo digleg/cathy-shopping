@@ -38,4 +38,8 @@ You can deploy to firebase server
 https://github.com/digleg/cathy-shopping
 
 ## framework made by draw.io
-<img src="https://i.imgur.com/cjswFvU.png" alt="draw.io" />
+<p align="center">
+<img src="https://i.imgur.com/cjswFvU.png" alt="draw.io" width="400"/>
+</p>
+
+
