@@ -2,7 +2,7 @@
 
 https://cathy-shopping.web.app/
 
-This project was for CATHY Shopping Project, that with below features
+## features
 
 1. basic shopping list functions implementation.
 2. Follow Eslint, Airbnb rules, and able to autofix with prettier.
@@ -38,3 +38,4 @@ You can deploy to firebase server
 https://github.com/digleg/cathy-shopping
 
 ## framework made by draw.io
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/txmTxmW"  ><a href="//imgur.com/a/txmTxmW">draw.io</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
