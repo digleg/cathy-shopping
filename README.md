@@ -7,10 +7,10 @@ https://cathy-shopping.web.app/
 1. basic shopping list functions implementation.
 2. Follow Eslint, Airbnb rules, and able to autofix with prettier.
 3. pxCook to comfirm the actual pixel and color precisely.
-4. css media query when device width less then some critical points
-5. redux new toolkit, redux-toolkits
-6. component reused
-7. draw.io draw the wireframe of RWD (web/mobile devices)
+4. css media query when device width less then some critical points.
+5. redux new toolkit, redux-toolkits.
+6. component reused.
+7. draw.io draw the wireframe of RWD (web/mobile devices).
 8. Add Circular Progress while loading the data from db.
 
 ## Available Scripts
