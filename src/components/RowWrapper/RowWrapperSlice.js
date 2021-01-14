@@ -11,7 +11,6 @@ export const rowWrapperSlice = createSlice({
       state.processingOrder = action.payload;
     },
     setCompleteOrder: (state, action) => {
-      console.log('setCompleteOrder:', action);
       state.completeOrder = action.payload;
     },
   },
