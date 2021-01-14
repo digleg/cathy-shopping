@@ -1,8 +1,8 @@
 .app > .MuiCircularProgress-root {
   position: fixed !important;
-  color: #009b4a !important;
-  margin-left: 45%;
   margin-top: 45%;
+  margin-left: 45%;
+  color: #009b4a !important;
 }
 
 .app__mask {

@@ -1,8 +1,8 @@
 .row {
-  min-height: 192px;
   display: flex;
   align-items: center;
   padding: 3px;
+  min-height: 192px;
 }
 
 .row__border:not(:last-child) {
@@ -17,15 +17,15 @@
 }
 
 .row__middle {
-  flex: 0.65;
-  padding-left: 22px;
   padding-right: 22px;
+  padding-left: 22px;
+  flex: 0.65;
 }
 
 .row__middle-first {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
