@@ -38,4 +38,4 @@ You can deploy to firebase server
 https://github.com/digleg/cathy-shopping
 
 ## framework made by draw.io
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/txmTxmW"  ><a href="//imgur.com/a/txmTxmW">draw.io</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<img src="https://i.imgur.com/cjswFvU.png" alt="draw.io" />
