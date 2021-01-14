@@ -1,2 +1,11 @@
-.app {
+.app > .MuiCircularProgress-root {
+  position: fixed !important;
+  color: #009b4a !important;
+  margin-left: 45%;
+  margin-top: 45%;
+}
+
+.app__mask {
+  background-color: black;
+  opacity: 0.3;
 }
