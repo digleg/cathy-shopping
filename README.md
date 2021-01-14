@@ -17,6 +17,7 @@ https://cathy-shopping.web.app/
 7. draw.io draw the wireframe of RWD (web/mobile devices).
 8. Add Circular Progress while loading the data from db.
 9. Get Data from Firebase Server (similar to API call actions).
+10. Style list to sort css style in order to raise the maintainability
 
 ## Available Scripts
 
