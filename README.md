@@ -35,13 +35,17 @@ You will also see any lint errors in the console.
 
 To build the function
 
-## framework made by draw.io
+## framework made by draw.io snapshot
 <p align="center">
 <img src="https://i.imgur.com/cjswFvU.png" alt="draw.io" width="400"/>
 </p>
 
-## pxCook note
-<p align="center">
+## pxCook note snapshot
+<p align="center"> 
 <img src="https://i.imgur.com/udg2OEx.png" alt="draw.io" width="400"/>
 </p>
 
+## Firebase data snapshot
+<p align="center"> 
+<img src="https://i.imgur.com/wJOYTxa.png" alt="draw.io" width="600"/>
+</p>
