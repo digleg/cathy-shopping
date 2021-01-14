@@ -2,6 +2,10 @@
 
 https://cathy-shopping.web.app/
 
+<p align="center">
+<img src="https://i.imgur.com/uGGJwHY.png" alt="draw.io" width="400"/>
+</p>
+
 ## features
 
 1. basic shopping list functions implementation.
