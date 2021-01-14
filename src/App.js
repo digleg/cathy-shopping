@@ -7,20 +7,41 @@ import { setProcessingOrder, setCompleteOrder } from './components/RowWrapper/Ro
 
 function App() {
   const dispatch = useDispatch();
-  // const processingOrder = useSelector(selectGetProcessingOrder);
-  // const completeOrder = useSelector(selectGetCompleteOrder);
-  // console.log('processingOrder:', processingOrder);
-  // console.log('completeOrder:', completeOrder);
+  const ORDER_STATUS = {
+    PROCESSING: 1,
+    ESTABILISH: 2,
+    CANCEL: 3,
+    ARRIVAL: 4,
+  };
+  const ROWWRAPPER_STATUS = {
+    PROCESSING: true,
+    COMPLETE: false,
+  };
 
   useEffect(() => {
-    dispatch(setProcessingOrder({ orderData }));
-    dispatch(setCompleteOrder({ orderData }));
+    dispatch(
+      setProcessingOrder(
+        orderData.orders.filter(
+          (el) =>
+            el.status?.code === ORDER_STATUS.PROCESSING ||
+            el.status?.code === ORDER_STATUS.ESTABILISH,
+        ),
+      ),
+    );
+    dispatch(
+      setCompleteOrder(
+        orderData.orders.filter(
+          (el) =>
+            el.status?.code === ORDER_STATUS.CANCEL || el.status?.code === ORDER_STATUS.ARRIVAL,
+        ),
+      ),
+    );
   }, []);
 
   return (
     <div className="app">
-      <RowWrapper status="true" />
-      <RowWrapper status="false" />
+      <RowWrapper status={ROWWRAPPER_STATUS.PROCESSING} />
+      <RowWrapper status={ROWWRAPPER_STATUS.COMPLETE} />
     </div>
   );
 }
