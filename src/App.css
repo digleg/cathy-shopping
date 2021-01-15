@@ -1,7 +1,7 @@
 .app > .MuiCircularProgress-root {
-  position: fixed !important;
-  margin-top: 45%;
-  margin-left: 45%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
   color: #009b4a !important;
 }
 
