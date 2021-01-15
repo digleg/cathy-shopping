@@ -31,31 +31,34 @@ function App() {
 
   useEffect(() => {
     // 至firebase db撈取order資料
-    db.collection('orders').onSnapshot((snapshot) => {
-      // 進行中項目
-      dispatch(
-        setProcessingOrder(
-          snapshot.docs
-            .map((doc) => doc.data())
-            .filter(
-              (el) =>
-                el.status?.code === ORDER_STATUS.PROCESSING ||
-                el.status?.code === ORDER_STATUS.ESTABILISH,
-            ),
-        ),
-      );
-      // 已完成項目
-      dispatch(
-        setCompleteOrder(
-          snapshot.docs
-            .map((doc) => doc.data())
-            .filter(
-              (el) =>
-                el.status?.code === ORDER_STATUS.CANCEL || el.status?.code === ORDER_STATUS.ARRIVAL,
-            ),
-        ),
-      );
-    });
+    db.collection('orders')
+      .orderBy('date', 'desc')
+      .onSnapshot((snapshot) => {
+        // 進行中項目
+        dispatch(
+          setProcessingOrder(
+            snapshot.docs
+              .map((doc) => doc.data())
+              .filter(
+                (el) =>
+                  el.status?.code === ORDER_STATUS.PROCESSING ||
+                  el.status?.code === ORDER_STATUS.ESTABILISH,
+              ),
+          ),
+        );
+        // 已完成項目
+        dispatch(
+          setCompleteOrder(
+            snapshot.docs
+              .map((doc) => doc.data())
+              .filter(
+                (el) =>
+                  el.status?.code === ORDER_STATUS.CANCEL ||
+                  el.status?.code === ORDER_STATUS.ARRIVAL,
+              ),
+          ),
+        );
+      });
   }, []);
 
   return (
