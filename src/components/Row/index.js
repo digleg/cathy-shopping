@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -6,6 +6,19 @@ import treemallGreen from '../../img/treemall-green.png';
 import treemallGray from '../../img/treemall-gray.png';
 
 function Row({ item, status }) {
+  const [windowWidth, setWindowWidth] = useState(null);
+  function truncate(str, n) {
+    return str?.length > n ? `${str.substr(0, n - 1)} ...` : str;
+  }
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="row row__border">
       <img className="row__img" src={status ? treemallGreen : treemallGray} alt="treemall-green" />
@@ -16,7 +29,9 @@ function Row({ item, status }) {
             {`預計出貨 ：${item.date.replace(/\//g, ' / ')}`}
           </div>
         </div>
-        <div className="row__middle-second">{item.name}</div>
+        <div className="row__middle-second">
+          {windowWidth < 530 ? truncate(item.name, 20) : item.name}
+        </div>
       </div>
       <div className="row__left">
         <ArrowForwardIosIcon className="row__left--icon" />
