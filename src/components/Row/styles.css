@@ -35,6 +35,13 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .row__middle-first-right {
+    display: inline;
+    justify-content: unset !important;
+    width: unset !important;
+    font-size: 24px;
+    color: #333333;
+  }
 }
 
 .row__middle-first-left {
@@ -45,7 +52,7 @@
 .row__middle-first-right {
   display: flex;
   justify-content: flex-start;
-  max-width: 260px;
+  width: 260px;
   font-size: 24px;
   color: #333333;
 }
