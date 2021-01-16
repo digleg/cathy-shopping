@@ -4,12 +4,10 @@ import './styles.css';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import treemallGreen from '../../img/treemall-green.png';
 import treemallGray from '../../img/treemall-gray.png';
+import truncate from '../../utils/truncate';
 
 function Row({ item, status }) {
   const [windowWidth, setWindowWidth] = useState(null);
-  function truncate(str, n) {
-    return str?.length > n ? `${str.substr(0, n - 1)} ...` : str;
-  }
   useEffect(() => {
     function handleResize() {
       setWindowWidth(window.innerWidth);
